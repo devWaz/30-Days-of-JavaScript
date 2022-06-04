@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    }
+
+h1{
+    text-align: center;
+    margin-top: 1.5rem;
+    color: white;}
+
+section{
+    display: flex;
+}
+
+.key span{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 320px){
+    section{
+        flex-wrap: wrap;
+        width: 95%;
+        margin: auto;
+        margin-top: 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .key{
+        border: 2px solid black;
+        border-radius: 5px;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: .5rem;
+        background-color: rgba(0, 0, 0, 0.212);
+    }
+    
+    .key kbd{
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .key span{
+        font-size: .7rem;
+        color: yellow;
+    }
+}
