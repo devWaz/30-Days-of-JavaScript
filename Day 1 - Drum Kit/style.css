@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body{
     src: url("Organical.ttf") format("opentype");
 }
 
-h1{
+h1 {
     font-family: organical;
     font-size: 5rem;
     text-align: center;
@@ -23,7 +23,7 @@ h1{
     color: #ccc;
 }
 
-section{
+section {
     display: flex;
     flex-wrap: wrap;
     width: 95%;
@@ -33,41 +33,41 @@ section{
     justify-content: center;
 }
 
-.key span{
+.key span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: .7rem;
     color: yellow;
 }
 
-    .key{
-        border: 2px solid white;
-        border-radius: 5px;
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: .5rem;
-        transition: all 0.07s;
-        background-color: rgba(0, 0, 0, 0.438);
-    }
-    
-    .key kbd{
-        font-size: 2rem;
-        color: white;
-    }
+.key {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    transition: all 0.07s;
+    background-color: rgba(0, 0, 0, 0.438);
+}
 
-    .playing{
-        transform: scale(1.1);
-        border-color: yellow;
-    }
+.key kbd {
+    font-size: 2rem;
+    color: white;
+}
 
-    footer{
-        color: white;
-        text-align: center;
-        margin-top: 7rem;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
-        font-size: 0.7rem;
-    }
+.playing {
+    transform: scale(1.1);
+    border-color: yellow;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin-top: 7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
