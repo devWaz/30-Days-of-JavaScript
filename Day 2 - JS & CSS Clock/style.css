@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     text-align: center;
     background-color: black;
     display: flex;
@@ -11,7 +11,7 @@ body{
     align-items: center;
 }
 
-.clock{
+.clock {
     width: 30rem;
     height: 30rem;
     border: 20px solid white;
@@ -21,14 +21,14 @@ body{
     padding: 2rem;
 }
 
-.clock-face{
+.clock-face {
     position: relative;
     width: 100%;
     height: 100%;
     transform: translateY(-3px);
 }
 
-.hand{
+.hand {
     width: 50%;
     height: 5px;
     background-color: white;
@@ -40,11 +40,11 @@ body{
     transition: all 0.05s; */
 }
 
-.minute-hand{
+.minute-hand {
     background-color: blue;
 }
 
-.seconds-hand{
+.seconds-hand {
     background-color: red;
     height: 3px;
 }
