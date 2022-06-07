@@ -8,15 +8,17 @@ body {
     background-color: black;
     display: flex;
     flex: 1;
+    flex-direction: column;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .clock {
-    width: 30rem;
-    height: 30rem;
-    border: 20px solid white;
+    width: 20rem;
+    height: 20rem;
+    border: 10px solid white;
     border-radius: 50%;
-    margin: 3rem auto;
+    margin: 7rem auto;
     position: relative;
     padding: 2rem;
 }
@@ -35,16 +37,22 @@ body {
     top: 50%;
     border-radius: 5px;
     position: absolute;
-    /* transform-origin: 100%;
+    transform-origin: 100%;
     transform: rotate(90deg);
-    transition: all 0.05s; */
-}
-
-.minute-hand {
-    background-color: blue;
+    transition: all 0.05s;  
+    transition-timing-function: cubic-bezier(.01,.95,.26,1.41) ;
 }
 
 .seconds-hand {
-    background-color: red;
+    background-color: green;
     height: 3px;
+}
+
+.minute-hand{
+    background-color: skyblue;
+}
+
+footer{
+    color: white;
+    font-weight: bold;
 }
