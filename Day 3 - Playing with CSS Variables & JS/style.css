@@ -15,6 +15,10 @@ h2{
     font-size: 2rem;
 }
 
+.highlight{
+    color: var(--base);
+}
+
 .controls{
     margin-bottom: 5rem;
 }
@@ -25,5 +29,13 @@ label{
 }
 
 :root{
+    --spacing: 10px;
+    --blur: 1px;
+    --base: skyblue;
+}
 
+img{
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
 }
