@@ -81,6 +81,7 @@ const people = [
     'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
 ];
 
+
 // Array.prototype.filter()
 // 1. Filter the list of inventors for those who were born in the 1500's
 const fifteen = inventors.filter(
@@ -91,6 +92,22 @@ const fifteen = inventors.filter(
     });
 
 console.table(fifteen);
+
+// 1b. returns all prime numbers in the Array
+const array = [-3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+
+function isPrime(num){
+    for (let i = 2; num > i; i++){
+        if(num % i == 0){
+            return false;
+        }
+    } //the for loop loops through the numbers and returns only numbers 
+        // not divisible by 2
+
+    return num > 1; //the function returns only number greater than 1
+}
+
+console.table(array.filter(isPrime)) //filter using callBackFn
 
 
 // Array.prototype.map()
@@ -112,9 +129,20 @@ const byAge = inventors.sort(
 console.table(byAge)
 // Array.prototype.reduce()
 // 4. How many years did all the inventors live all together?
+const totalYears = inventors.reduce((total , inventor) => {
+    return total + (inventor.passed - inventor.year);
+}, 0);
 
+console.log(totalYears);
 
 // 5. Sort the inventors by years lived
+const oldest = inventors.sort(function(a ,b){
+    const lastGuy = a.passed - a.year;
+    const nextGuy = b.passed - b.year;
+    return lastGuy > nextGuy ? -1 : 1;
+});
+
+console.table(oldest); //outputs who lived longest, top to bottom
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
@@ -122,6 +150,7 @@ console.table(byAge)
 
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
